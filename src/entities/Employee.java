@@ -20,6 +20,10 @@ public class Employee {
 		salary += (salary * percent) / 100;
 	}
 
+	public String toString() {
+		return id + ", " + name + ", " + String.format(" %.2f", salary);
+	}
+
 	public Integer getId() {
 		return id;
 	}
